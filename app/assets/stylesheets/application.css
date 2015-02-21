@@ -15,6 +15,12 @@
  */
 
 /*Helper css classes*/
+@font-face {
+  font-family: 'Allura';
+  src: url(/assets/Allura-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .right{
   float: right;
 }
@@ -27,14 +33,13 @@
 }
 /*Helper css classes*/
 
-body{
-  background: url("body_background.jpg");
-}
+body  {
+  font-family: 'Allura';
+  /*font-size: 20px;*/
+  -webkit-font-smoothing: antialiased ;
+  -moz-font-smoothing: antialiased;
 
-body #navbar{
-  width: 1301px;
-  margin-left: -8px;
-  margin-top: -8px;
+  background: url("body_background.jpg");
 }
 
 body #navbar #chunni{
