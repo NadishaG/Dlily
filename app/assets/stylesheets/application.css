@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*Helper css classes*/
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+.clearfix{
+  clear: both;
+}
+/*Helper css classes*/
+
+body{
+  background: url("body_background.jpg");
+}
+
+body #navbar{
+  width: 1301px;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
+body #navbar #chunni{
+  background: url("nav-bar-background.jpeg");
+  height: 83px;
+}
+
+body #navbar #chunni-border{
+  background: url("chunni-border.jpg");
+  height: 30px;
+}
+
+
+body #navbar #chunni .left{
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+body #navbar #chunni .right{
+  vertical-align: middle;
+  margin-left: 20px;
+}
