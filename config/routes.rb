@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
-
+  root 'home#index'
+  resources :admin, only: :index
+  get 'admin/login' => 'admin#login'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -48,9 +49,9 @@ Rails.application.routes.draw do
   #   resources :photos, concerns: :toggleable
 
   # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  namespace :admin do
+    # Directs /admin/products/* to Admin::ProductsController
+    # (app/controllers/admin/products_controller.rb)
+    resources :brands, :items, :orders, :users
+  end
 end
