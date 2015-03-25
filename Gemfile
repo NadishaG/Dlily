@@ -27,7 +27,7 @@ gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 gem "pg"
-
+gem "nested_form"
 group :assets do
   gem 'angularjs-rails'
 end

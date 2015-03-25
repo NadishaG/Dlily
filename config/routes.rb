@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :admin, only: :index
   get 'admin/login' => 'admin#login'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

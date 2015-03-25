@@ -1,0 +1,39 @@
+<div class="row-fluid">
+  <div class="span8 offset2">
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li><%= link_to 'Users', admin_users_path %></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle"
+           data-toggle="dropdown"
+           href="#">
+          Brands
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><%= link_to 'Add a new Brand', new_admin_brand_path %></li>
+          <li><%= link_to 'List Brands', admin_brands_path %></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle"
+           data-toggle="dropdown"
+           href="#">
+          Orders
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><%= link_to 'View Orders', new_admin_order_path %></li>
+          <li><%= link_to 'Place a order', admin_orders_path %></li>
+        </ul>
+      </li>
+      <li><%= link_to 'View Transactions'%></li>
+      <li><%= link_to 'Report an issue'%></li>
+      <li><a href="#">Queries</a></li>
+      <li><%= link_to 'Post Blogs'%></li>
+    </ul>
+  </div>
+</div>
+

@@ -34,10 +34,10 @@
 /*Helper css classes*/
 
 body  {
-  font-family: 'Allura';
+  /*font-family: 'Allura';*/
   /*font-size: 20px;*/
-  -webkit-font-smoothing: antialiased ;
-  -moz-font-smoothing: antialiased;
+  /*-webkit-font-smoothing: antialiased ;*/
+  /*-moz-font-smoothing: antialiased;*/
 
   background: url("body_background.jpg");
 }
